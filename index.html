@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALENTINE</title>
+    <style>
+        .page { 
+            display: none; 
+        }
+        .active {
+             display: block; 
+            } 
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            gap: 40px;
+        }
+    </style>
+</head>
+<body style="background-color: pink;">
+
+    <nav>
+        <i><h1 style="text-align: center; background-color: red;">Happy valentines day Chelsea</h1></i>
+    </nav>
+
+    <div id="index" class="page active">
+        <div class="container"><img src="images/val.gif" alt="Muahh"></div>
+    <h1 style="text-align: center; color: red;">Hey bby.... Happy Val</h1>
+        <div class="container">
+            <button onclick="showPage('question')" style="font-size: larger; color: rgb(165, 0, 0); ">Proceed</button>
+        </div>
+    </div>
+
+    <div id="question" class="page">
+        <div class="container"><img src="images/question.gif" alt="muahhhh"></div>
+    <h1 style="text-align: center; color: red;">I love uuuuu.... <br>Do you love me too...?</h1>
+    <div class="container">
+        <div class="buttons">
+           <button onclick="showPage('firstyes')" style="font-size: larger; color: rgb(165, 0, 0); ">YES</button>     
+           <button onclick="showPage('firstno')" style="font-size: larger; color: rgb(165, 0, 0); ">NO</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="firstyes" class="page">
+        <div class="container"><img src="images/firstyes.gif" alt="muahhhh"></div>
+        <h1 style="text-align: center; color: red;">Awwwwwnn <br><br><br> Are you suree heheh</h1>
+        <div class="container">
+            <div class="buttons">
+               <button onclick="showPage('final')" style="font-size: larger; color: rgb(165, 0, 0); ">YES</button></a>     
+               <button onclick="showPage('secondno')" style="font-size: larger; color: rgb(165, 0, 0); ">NO</button></a>
+            </div>
+    </div>
+    </div>
+
+    <div id="firstno" class="page">
+        <div class="container"><img src="images/firstno.gif" alt="muahhh"></div>
+        <h1 style="text-align: center; color: red;">Waitttt.. <br>You clicked NO...? <br>IK you meant YES <br><br>CLICK AGAIN</h1>
+    <div class="container">
+        <div class="buttons">
+           <button onclick="showPage('firstyes')" style="font-size: larger; color: rgb(165, 0, 0); ">YES</button>     
+           <button onclick="showPage('secondno')" style="font-size: larger; color: rgb(165, 0, 0); ">NO</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="secondno" class="page">
+        <div class="container"><img src="images/secondno.gif" alt=""></div>
+        <h1 style="text-align: center; color: red;">Hunny please <br>You're breaking my heart RN <br><br> Choose againnnnnn...!</h1>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="showPage('firstyes')" style="font-size: larger; color: rgb(165, 0, 0); ">YES</button>
+            <button onclick="showPage('thirdno')" style="font-size: larger; color: rgb(165, 0, 0); ">NO</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="thirdno" class="page">
+        <div class="container"><img src="images/thirdno.gif" alt="muahhhh"></div>
+        <h1 style="text-align: center; color: red;">Arghhhhh<br><br> Choose againnnnnn...!</h1>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="showPage('firstyes')" style="font-size: larger; color: rgb(165, 0, 0); ">YES</button>
+            <button onclick="showPage('lastno')" style="font-size: larger; color: rgb(165, 0, 0); ">NO</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="lastno" class="page">
+        <div class="container"><img src="images/lastno.gif" alt="muahhhh"></div>
+        <h1 style="text-align: center; color: red;">Ohh... Actually unexpected. <br><br>Buhh i'll inform Dewumi <br><br><br><br>Byeeeeeeeeeee</h1>
+    <div class="container">
+    </div>
+    </div>
+    
+    <div id="final" class="page">
+        <div class="container"><img src="images/final.gif" alt="muahhhh"></div>
+        <h1 style="text-align: center; color: red;">Awwwwn I knew you do <br> Muahh Muahhhhh Muahhhhhhhhhhhhhhh <br><br><br> Let's go change your last name to mine <br><br> <i>ADEWUMI CHELSEA ABIOLA</i> <br><br>Looks right... RIGHT..???</h1>
+    <div class="container">
+    </div>
+    </div>
+
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
