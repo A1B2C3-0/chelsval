@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALENTINE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1 class="para1" >Happy valentines day Tshimo</h1>
+    </nav>
+
+    <div id="index" class="page active">
+        <div class="container"><img src="images/val.gif" alt="Muahh"></div>
+    <h1 class="para2">HEY BABY... HAPPY VAL</h1>
+        <div class="container">
+            <button onclick="showPage('question')" class="button">Proceed</button>
+        </div>
+    </div>
+
+    <div id="question" class="page">
+        <div class="container"><img src="images/question.gif" alt="muahhhh"></div>
+    <h1 class="para2">I love uuuuu.... <br>Do you love me too...?</h1>
+    <div class="container">
+        <div class="buttons">
+           <button onclick="showPage('firstyes')" class="button">YES</button>     
+           <button onclick="showPage('firstno')" class="button">NO</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="firstyes" class="page">
+        <div class="container"><img src="images/firstyes.gif" alt="muahhhh"></div>
+        <h1 class="para2">Awwwwwnn <br><br><br> Are you suree heheh</h1>
+        <div class="container">
+            <div class="buttons">
+               <button onclick="showPage('final')" class="button">YES</button></a>     
+               <button onclick="showPage('secondno')" class="button">NO</button></a>
+            </div>
+    </div>
+    </div>
+
+    <div id="firstno" class="page">
+        <div class="container"><img src="images/firstno.gif" alt="muahhh"></div>
+        <h1 class="para2">Waitttt.. <br>You clicked NO...? <br>IK you meant YES <br><br>CLICK AGAIN</h1>
+    <div class="container">
+        <div class="buttons">
+           <button onclick="showPage('firstyes')" class="button">YES</button>     
+           <button onclick="showPage('secondno')" class="button">NO</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="secondno" class="page">
+        <div class="container"><img src="images/secondno.gif" alt=""></div>
+        <h1 class="para2">Hunny please <br>You're breaking my heart RN <br><br> Choose againnnnnn...!</h1>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="showPage('firstyes')" class="button">YES</button>
+            <button onclick="showPage('thirdno')" class="button">NO</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="thirdno" class="page">
+        <div class="container"><img src="images/thirdno.gif" alt="muahhhh"></div>
+        <h1 class="para2">Arghhhhh<br><br> Choose againnnnnn...!</h1>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="showPage('firstyes')" class="button">YES</button>
+            <button onclick="showPage('lastno')" class="button">NO</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="lastno" class="page">
+        <div class="container"><img src="images/lastno.gif" alt="muahhhh"></div>
+        <h1 class="para2">Ohh... Actually unexpected. <br><br>Buhh i'll inform my Creator <br><br><br><br>Byeeeeeeeeeee</h1>
+    <div class="container">
+    </div>
+    </div>
+    
+    <div id="final" class="page">
+        <div class="container"><img src="images/final.gif" alt="muahhhh"></div>
+        <h1 class="para2">Awwwwn I knew you do <br> Muahh Muahhhhh Muahhhhhhhhhhhhhhh <br><br><br> Let's go change your last name to mine <br><br> <i style="text-decoration: underline;">Ebuka Tshimo</i> <br><br>Looks right... RIGHT..???</h1>
+    <div class="container">
+    </div>
+    </div>
+
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

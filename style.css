@@ -1,0 +1,45 @@
+.page { 
+    display: none; 
+}
+.active {
+     display: block; 
+    } 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    gap: 60px;
+}
+body {
+    background-color: pink;
+}
+.para1 {
+    text-align: center; 
+    background-color: red;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+.para2 {
+    text-align: center; 
+    color: red;
+}
+.para1:hover {
+    color:palevioletred;
+    background-image: url(images/hearts.jpg)
+}
+.para2:hover {
+    color: black;
+}
+button {
+    font-size: larger;
+    color: red;
+    background-color: black;
+}
+button:hover {
+    background-color: red;
+    color: black;
+}
